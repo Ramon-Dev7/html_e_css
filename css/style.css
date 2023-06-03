@@ -1,0 +1,291 @@
+body {
+	font-family: 'Montserrat', sans-serif;/* fonte importada do google */
+}
+
+header {
+	background: #BBBBBB;/* cor do fundo */
+	padding:20px 0;/* espaço interno */
+}
+
+.caixa {
+	position: relative;/* para levantar */
+	width: 940px;/* definindo a largura da caixa */
+	margin: 0 auto;/* marge externo esquerd(0) e direito auto */ 
+}
+
+nav {
+	position: absolute; /* mover pra onde quiser */
+	top: 110px;/* superior */
+	right: 0; /* à direita */
+}
+
+nav li {
+	display: inline;/* conteúdo da lista vai ser lado-alado */
+	margin: 0 0 0 15px;/* 4 espaço externo dá esquerda para direita */
+}
+
+nav a {
+	text-transform: uppercase;/* transformar os textos dos limks em maiúsculas */
+	color: #000000;/* deixar o texto todo preto */
+	font-weight: bold;/* estilo da fonte */
+	font-size: 22px;/* tamanho da fonte */
+	text-decoration:none;/* tirar o subilinhado */
+
+}
+
+nav a:hover { /* ação do mouse qunado estiver nas tag nav e a */
+	color: #C78C19;/* a cor */
+	text-decoration: underline;/* para viltar o subilinhado */
+}
+
+.produtos {
+	width: 940px;/* largura */
+	margin: 0 auto;/* zero ebcima e embaixo e auto dos lados */
+	padding: 50px 0;/* espaçamento 50px para cime e para baixo e zero pros lados */
+}
+
+.produtos li {
+	display: inline-block;/* para deixar lado-alado */
+	text-align: center;/* centralizar */
+	width: 30%;/* distribuir a largura */
+	vertical-align: top;/* alinhar pela linha de cima */
+	margin: 0 1.5%;/*espaçamento externo de zero pra cima e zero pra baixo e 1.5% pros lados */
+	padding: 30px 20px;/* espaço interno para cima e para baixo e para os lados */
+	box-sizing: border-box;/* defenindo os espaçamentos como fixo */
+	border: 2px solid #000000;/* largura 2px, negrito(solid), cor da borda */
+	border-radius: 10px;/* border-radius, podemos desenhar o canto arredondado dos elementos. */
+
+}
+
+.produtos li:hover { /* quando o mouse estiver por cima */
+	border-color: #C78C19;
+}
+
+.produtos li:active { /* quando o mouse estiver clicado ou ativo */
+	border-color: #088C19;/* cor verde */ 
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;/* mudar o tamanho da fonte h2 quando o mouse passar por ele */
+}
+
+.produtos h2 {
+	font-size: 30px;/* tamanho das letras */
+	font-weight: bold;/* peso e estilo das letras */
+}
+
+.produtos-descricao {
+	font-size: 18px;
+}
+
+.produtos-preco {
+	font-size:22px ;/* tamanho */
+	font-weight: bold;/* negrito */
+	margin-top: 10px;/* espaço superior entre o preço e a descrição*/
+}
+
+footer {
+	text-align: center;/* centralizar o texto do roda-pé */
+	background: #1c1c1c;
+	padding: 40px 0;/* espaço interno superio de 40px e dos lados zero */
+	
+}
+
+.copyright {
+	color: #FFFFFF;/* cor da fonte */
+	font-size: 13px;/* tamanho */
+	margin: 20px 0 0;/* espaço externo */
+
+}
+
+main {
+	
+}
+
+form {
+	margin: 40px 0;/* espaço externo de 40px superior e inferior e zero pros lados */
+}
+
+form label, form legend {
+	display: block;/* lado alado */
+	font-size: 20px;/* tamanho das letras */
+	margin: 0 0 10;/* zero pra esquerda, zero para direira e 10px superior */
+}
+
+.input-padrao {
+	display: block;/* lado alado */
+	margin: 0 0 20px;/* espaçamente externo inferior 20px */
+	padding: 10px 25px;/* espaço interno 10px para cime e para baixo e 25px pros lados */
+	width: 50%;/* largura do campo para digitar */
+}
+
+.checkbox {
+	margin: 20px 0;/* espaço para cima e para baixo 20px, e zero pros lados */
+}
+
+.enviar {
+	width: 40%;/* largura */
+	padding: 15px 0;/* para cima e para baixo e zero pros lados */
+	background: orange;/* cor de fundo */
+	color: white;/* cor do texto branco */
+	font-weight: bold;/* negrito */
+	font-size: 18px;/* tamanho da letra */
+	border: none;/* none para tirar borda */
+	border-radius: 5px;/* arredondar as bordas */
+	transition: 2s all; /* transição da cor ao passar o mouse por cima */
+	cursor: pointer;/* para mundar o formato do mouse para a mãozinha, ou seja, clicavél */
+}
+
+/* estilizando a tabela */
+
+.enviar:hover {
+	background: darkorange;/* para quando passar o mouse mostrar essa cor de fundo */
+	transform: scale(1.2);/* para aumentar proporcialmente um elemento ao passar o mouse */
+
+}
+
+table {
+	margin: 20px 0 40px;/* espaçamento externo */
+}
+
+thead {
+	background: #555555;/* cor de fundo do cabeçalho da tabela */
+	color: white; /* cor da letra */
+	font-size: bold;/* negrito */
+}
+
+td, th {
+	border: 1px solid #000000; /* espessura da borda e a cor */
+	padding: 15px 8px; /* espaço interno */
+}
+
+/* css da página inicial */
+.banner {
+	width: 100%;
+}
+
+.titulo-principal {
+	text-align: center;/* centralizar */
+	font-size: 2em;/* 2x o tamanho base */
+	margin: 0 0 1em;/* espaço externo */
+	clear: left;/* para limpar o float pq tudo que está envolda vai flutuar */
+	
+}
+
+.titulo-principal::first-letter { /* para pegar a primeira letra */
+	font-weight: bold; /* negrito */
+}
+
+.principal {
+	padding: 3em 0;/* espaço interno */
+	background: #FEFEFE;
+	width: 940px;/* largura */
+	margin: 0 auto;/* espaço externo zero encima e embaixo e auto nos lados */
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bold;/* negrito */
+}
+
+.principal em {
+	font-style: italic; /* estilo da fonte 'em' */
+}
+
+/* propriedade float: deslocar o elemnto na lateral e deixar os outros elementos ao redor */
+
+.utensilios {
+	width: 120px;/* largura da imagem */
+	float: left;/* para flutuar em volta do elemento à esquerda */
+	margin: 0 20px 20px 0 ;/* zero pra cima 20 pra direira, 20 pra baixo e zero pra esquerda */
+}
+
+.mapa {
+	padding: 3em 0;/* espaço interno (3em significa 3x) */
+	background: linear-gradient(#fefefe,#888888);/* transição de cor */
+}
+
+.mapa-conteudo {
+	width: 940px;/* largura */
+	margin: 0 auto;/* espço esterno */
+}
+
+.mapa p {
+	margin: 0 0 2em;/* espaço externo 2x para direita */
+	text-align: center;/* centralizar */
+}
+
+
+.beneficios {
+	padding: 3em 0;/* espaço interno */
+	background: #888888;
+	
+}
+
+.conteudo-beneficios {
+	width: 640px;/* largura */
+	margin: 0 auto;/* espaço externo */
+}
+
+.lista-beneficios {
+	width: 40%;/* largura */
+	display: inline-block;/* para ficar lado a lado */
+	vertical-align: top;/* para alinhar pela parte de cima */
+}
+
+.itens {
+	line-height: 1.5;/* altura da linha */
+}
+
+.itens:first-child { /* pego o primeiro dos irmão e aplica a propriedade abaixo */
+	font-weight: bold; /* negrito */
+}
+
+.itens::before { /* quando queremos criar um elemento na página, via CSS, antes do elemento do HTML*/
+	content: "🟊"; /* aplica o elemento */
+}
+
+.imagem-beneficios {
+	width: 60%;/* largura da imagem */
+	opacity: 1;/* opacidade */
+	transition: 400ms; /* transição */
+	box-shadow: 10px 10px 10px 0 #000000;/* sombra no eixo X e Y de sólido para transparente e uma cor */
+}
+
+.imagem-beneficios:hover {
+	opacity: 0.3;/* opacidade */
+}
+
+.video {
+	width: 560px;/* largura */
+	margin: 2em auto;/* espaço externo */
+}
+
+/* como marcar um elemento para que ele seja apresentado de outra forma, em uma tela de até 480px */
+/* deixar o layout responsivo */
+
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto; /* mudar o tamanho dos elementos e deixa-los adaptável */
+	}
+
+	h1 {
+		text-align: center; /* centralizar */
+	}
+
+	nav {
+		position: static; /* estático */
+	}
+
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%; /* largura */
+	}
+	
+	
+}
+
+
+
